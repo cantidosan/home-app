@@ -1,37 +1,5 @@
-.container{
 
-    display:flex;
-    flex-direction: row;
-    background-color: teal;
-    justify-content: space-between;
 
-}
 
-.left{
-    display:flex;
-    text-align: left;
-    background-color: orange;
-    height:30vh;
-    
-}
 
-.nameBlock{
-    font-weight: 500;
-    
-    
-    
-}
 
-.right{
-    
-    background-color: olive;
-    
-    
-
-}
-
-.LogoBlock{
-
-   
-    
-}
