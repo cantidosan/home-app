@@ -1,5 +1,8 @@
 import React from 'react';
 import LanguageInfo from './LanguageInfo';
+
+
+
 export default function LanguageList(props) {
 
     const languages = [
@@ -11,6 +14,7 @@ export default function LanguageList(props) {
         { label: "Sass", href: "" },
         { label: "Reactjs", href: "" },
         { label: "Postgres", href: "" },
+        { label: "Python", href: "" },
         { label: "MongoDB", href: "" }];
 
     return (

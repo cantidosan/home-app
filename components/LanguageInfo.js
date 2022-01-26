@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useState } from 'react';
+import LanguageContext from '../Contexts/LangaugeContext';
+
 
 export default function LanguageInfo(props) {
+
+
+    const [isSelected, setIsSelected] = useState(false);
+
+
+    const handleClick = (event) => {
+
+        console.log(props)
+        console.log("click");
+        console.log(event);
+
+        setIsSelected(!isSelected)
+
+    }
+
     return (
 
-        <div className="flex basis-40  justify-center items-center  
+        <div className={`flex basis-40  justify-center items-center  
                         box-border h-32  p-4 border-4 bg-rose-500 
-                        hover:bg-rose-300 hover:scale-110">
+                        hover:bg-rose-300 cursor:pointer hover:scale-110 ${isSelected ? "scale-90 bg-cyan-700" : ""} `}>
 
-            <a >{props.lang.label}</a>
+            <a onClick={handleClick}>
+
+                {props.lang.label}
+
+            </a>
 
         </div>
 

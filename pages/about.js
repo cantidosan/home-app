@@ -11,6 +11,7 @@ export default function About() {
 
     return (
         <>
+
             <div className="flex flex-row  justify-between">
                 <div className="flex-col basis-1/2 text-left bg-cyan-400">
                     <div className="font-medium">
@@ -31,6 +32,7 @@ export default function About() {
                 <LanguageList />
             </div>
             <ProjectList />
+
         </>
     );
 
