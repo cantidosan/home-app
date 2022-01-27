@@ -26,8 +26,8 @@ export default function LanguageInfo(props) {
     return (
 
         <div className={`flex basis-40  justify-center items-center  
-                        box-border h-32  p-4 border-4 bg-rose-500 
-                        hover:bg-rose-300 cursor-pointer hover:scale-110 ${isSelected ? "scale-90 bg-cyan-700" : ""} `}>
+                        box-border h-32  p-4 border-4 bg-secondary 
+                        hover:bg-secondary-light cursor-pointer hover:scale-110 ${isSelected ? "scale-90 bg-secondary-dark" : ""} `}>
 
             <a onClick={handleClick}>
 

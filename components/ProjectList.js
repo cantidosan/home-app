@@ -47,7 +47,7 @@ export default function ProjectList(props) {
     ///to only print matches
     return (
         <div className="flex basis-1/2  gap-4 flex-row grow 
-                    flex-wrap justify-center bg-emerald-500 ">
+                    flex-wrap justify-center bg-primary-light ">
 
 
 

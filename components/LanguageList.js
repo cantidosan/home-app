@@ -47,7 +47,7 @@ export default function LanguageList(props) {
 
     return (
         <div className="flex basis-1/2  gap-4 flex-row grow flex-wrap 
-                        justify-between bg-teal-500 ">
+                        justify-between bg-primary-light">
             {languages.map((lang, key) => (
 
                 <LanguageInfo lang={lang} key={key} onClick={handleLanguageClick} />

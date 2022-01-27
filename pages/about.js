@@ -13,7 +13,7 @@ export default function About() {
         <>
 
             <div className="flex flex-row  justify-between">
-                <div className="flex-col basis-1/2 text-left bg-cyan-400">
+                <div className="flex-col basis-1/2 text-left bg-primary-light">
                     <div className="font-medium">
                         Name:
                         Gavin B

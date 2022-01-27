@@ -1,8 +1,8 @@
 .container{
     padding:15px;
     display:flex;
-    color: rgb(47, 47, 149);
-    background:lightcoral ;
+    color:#ffff;
+    background:#f76c6c ;
     flex-direction: row;
     justify-content: center;
     gap: 120px;
