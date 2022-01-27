@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import LanguageInfo from './LanguageInfo';
-
+import LanguageContext from '../Contexts/LangaugeContext';
 
 
 export default function LanguageList(props) {
+
+
+    const { lang, setLangList } = useContext(LanguageContext);
+
+    const handleLanguageClick = (label, isSelected) => {
+
+
+        //console.log(label, isSelected)
+        let newLang = [...lang]
+
+        if (isSelected) {
+
+            //Add the language to the array 
+
+            newLang.push(label)
+
+        }
+        else {
+
+            // Check if language  already exists in array and remove it
+            newLang = lang.filter((word) => word !== label);
+
+
+        }
+        setLangList(newLang)
+        //console.log(lang)
+
+    }
 
     const languages = [
         { label: "Javascript", href: "" },
@@ -22,7 +50,7 @@ export default function LanguageList(props) {
                         justify-between bg-teal-500 ">
             {languages.map((lang, key) => (
 
-                <LanguageInfo lang={lang} key={key} />
+                <LanguageInfo lang={lang} key={key} onClick={handleLanguageClick} />
 
             ))}
         </div>
